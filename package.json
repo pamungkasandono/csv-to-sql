@@ -26,8 +26,11 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "format": "prettier --write \\\"src/**/*.{js,jsx}\\\""
+    "format": "prettier --write \\\"src/**/*.{js,jsx}\\\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "type": "module",
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "homepage": "https://pamungkasandono.github.io/csv-to-sql"
 }
